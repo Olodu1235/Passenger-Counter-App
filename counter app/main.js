@@ -1,15 +1,20 @@
-let count = 0;
 let countEl = document.getElementById("count-el");
 let saveEl = document.getElementById("save-el");
+var enter = document.getElementById('entries');
+var count = 0;
+var entry = count;
 
 function increment() {
-    count += 1;
-    countEl.innerText = count;
+    entry++;
+    countEl.innerHTML = entry;
 
 }
 function save() {
-    countstr = count + "-";
-    saveEl.textContent += countstr;
+    countEl.innerHTML = entry*0;
+    enter.innerHTML = entry;
 }
-countEl.textContent = 0;
-count = 0;
+
+function reset() {    
+    window.location.reload();
+    
+}
