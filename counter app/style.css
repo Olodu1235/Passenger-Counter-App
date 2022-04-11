@@ -32,7 +32,7 @@ cursor: pointer;
 transition: 800ms all ease;
 }
 button:hover{
-    transform: scale(1.25) ;
+    transform: scale(1.1) ;
 }
 #increment-btn{
     background:darkgreen
